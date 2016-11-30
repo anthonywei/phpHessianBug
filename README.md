@@ -3,17 +3,6 @@ Type Stirng Expected Hessian bug report
 
 PHP hessian Type String Expected bug解决方案
 
-答复全部答复转发
-标记为未读
-
-Anthony Wei Shou Yang 魏守阳
-周三 2016/11/30 17:16
-收件人:
-陈猜（） <chencai@j1.com>;
-gaojinsheng@j1.com;
-zhangchuancun@j1.com;
-
-这两天和浩生，永旭定位了一下这个问题，解决方案如下：
 hessian协议对于long string类型传输有以下定义
 (1) 块大小为1到31个byte时： 
 用一个byte表示长度(一个byte最多表示31的长度)，后面跟具体数据。 
